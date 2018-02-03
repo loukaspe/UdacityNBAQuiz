@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="view_size">3dp</dimen>
+    <dimen name="view_padding">16dp</dimen>
+    <dimen name="welcome_text_size">32sp</dimen>
+    <dimen name="question_size">24sp</dimen>
+    <dimen name="answer_size">20sp</dimen>
+    <dimen name="between_question_margin">16dp</dimen>
+    <dimen name="in_question_margin">16dp</dimen>
+    <dimen name="margin_left">5dp</dimen>
+
+</resources>

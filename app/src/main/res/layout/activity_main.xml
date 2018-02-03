@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/nba_background"
+    android:fillViewport="true"
+    tools:context="com.example.android.nbaquiz.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-condensed"
+            android:gravity="center_horizontal"
+            android:text="@string/welcome_text"
+            android:textAllCaps="true"
+            android:textColor="@color/text_gray_color"
+            android:textSize="@dimen/welcome_text_size"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/view_size"
+            android:layout_margin="@dimen/view_padding"
+            android:background="@color/colorAccent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-condensed"
+            android:paddingLeft="@dimen/margin_left"
+            android:paddingTop="@dimen/between_question_margin"
+            android:text="@string/question_one"
+            android:textColor="@color/text_gray_color"
+            android:textSize="@dimen/question_size"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/nba_word_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:hint="@string/write_edit_text"
+            android:inputType="textCapWords"
+            android:paddingLeft="@dimen/margin_left"
+            android:paddingTop="@dimen/in_question_margin"
+            android:textSize="@dimen/answer_size"
+            android:textStyle="italic" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-condensed"
+            android:paddingLeft="@dimen/margin_left"
+            android:paddingTop="@dimen/between_question_margin"
+            android:text="@string/question_two"
+            android:textColor="@color/text_gray_color"
+            android:textSize="@dimen/question_size"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/margin_left"
+            android:paddingTop="@dimen/in_question_margin">
+
+            <RadioButton
+                android:id="@+id/michael_jordan_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:text="@string/michael_jordan_player"
+
+                android:textColor="@color/text_black_color"
+                android:textSize="@dimen/answer_size" />
+
+            <RadioButton
+                android:id="@+id/kobe_bryant_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:text="@string/kobe_bryant_player"
+
+                android:textColor="@color/text_black_color"
+                android:textSize="@dimen/answer_size" />
+
+            <RadioButton
+                android:id="@+id/abdul_jabbar_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:text="@string/abdul_jabbar_player"
+                android:textColor="@color/text_black_color"
+                android:textSize="@dimen/answer_size" />
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-condensed"
+            android:paddingBottom="@dimen/in_question_margin"
+            android:paddingLeft="@dimen/margin_left"
+            android:paddingTop="@dimen/between_question_margin"
+            android:text="@string/question_three"
+            android:textColor="@color/text_gray_color"
+            android:textSize="@dimen/question_size"
+            android:textStyle="bold" />
+
+        <CheckBox
+            android:id="@+id/kyrie_irving_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_left"
+            android:fontFamily="sans-serif-light"
+
+            android:text="@string/kyrie_irving_player"
+            android:textColor="@color/text_black_color"
+            android:textSize="@dimen/answer_size" />
+
+        <CheckBox
+            android:id="@+id/tim_duncan_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_left"
+            android:fontFamily="sans-serif-light"
+
+            android:text="@string/tim_duncan_player"
+            android:textColor="@color/text_black_color"
+            android:textSize="@dimen/answer_size" />
+
+        <CheckBox
+            android:id="@+id/dirk_nowitzki_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_left"
+            android:fontFamily="sans-serif-light"
+            android:text="@string/dirk_nowitzki_player"
+
+            android:textColor="@color/text_black_color"
+            android:textSize="@dimen/answer_size" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-condensed"
+            android:paddingLeft="@dimen/margin_left"
+            android:paddingTop="@dimen/between_question_margin"
+            android:text="@string/question_four"
+            android:textColor="@color/text_gray_color"
+            android:textSize="@dimen/question_size"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <SeekBar
+                android:id="@+id/seek_bar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="7"
+                android:max="40"
+                android:paddingLeft="@dimen/margin_left"
+                android:paddingTop="@dimen/in_question_margin"
+                android:progress="0" />
+
+            <TextView
+                android:id="@+id/progress_bar_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-light"
+                android:text="@string/progress_bar_start_value"
+                android:textColor="@color/text_black_color"
+                android:textSize="@dimen/answer_size"
+                android:textStyle="italic" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-condensed"
+            android:paddingLeft="@dimen/margin_left"
+            android:paddingTop="@dimen/between_question_margin"
+            android:text="@string/question_five"
+            android:textColor="@color/text_gray_color"
+            android:textSize="@dimen/question_size"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/most_points_word_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:hint="@string/write_edit_text"
+            android:inputType="text|number"
+            android:paddingLeft="@dimen/margin_left"
+            android:paddingTop="@dimen/in_question_margin"
+            android:textSize="@dimen/answer_size"
+
+            android:textStyle="italic" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-condensed"
+            android:paddingLeft="@dimen/margin_left"
+            android:paddingTop="@dimen/between_question_margin"
+            android:text="@string/question_six"
+            android:textColor="@color/text_gray_color"
+            android:textSize="@dimen/question_size"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/margin_left"
+            android:paddingTop="@dimen/in_question_margin">
+
+            <RadioButton
+                android:id="@+id/celtics_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:text="@string/celtics_team"
+                android:textColor="@color/text_black_color"
+                android:textSize="@dimen/answer_size" />
+
+            <RadioButton
+                android:id="@+id/lakers_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:text="@string/lakers_team"
+                android:textColor="@color/text_black_color"
+                android:textSize="@dimen/answer_size" />
+
+            <RadioButton
+                android:id="@+id/warriors_most_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:text="@string/warriors_team"
+                android:textColor="@color/text_black_color"
+                android:textSize="@dimen/answer_size" />
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-condensed"
+            android:paddingLeft="@dimen/margin_left"
+            android:paddingTop="@dimen/between_question_margin"
+            android:text="@string/question_seven"
+            android:textColor="@color/text_gray_color"
+            android:textSize="@dimen/question_size"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/margin_left"
+            android:paddingTop="@dimen/in_question_margin">
+
+            <RadioButton
+                android:id="@+id/warriors_current_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:text="@string/warriors_team"
+                android:textColor="@color/text_black_color"
+                android:textSize="@dimen/answer_size" />
+
+            <RadioButton
+                android:id="@+id/cavaliers_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:text="@string/cavaliers_team"
+                android:textColor="@color/text_black_color"
+                android:textSize="@dimen/answer_size" />
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-condensed"
+            android:paddingBottom="@dimen/in_question_margin"
+            android:paddingLeft="@dimen/margin_left"
+            android:paddingTop="@dimen/between_question_margin"
+            android:text="@string/question_eight"
+            android:textColor="@color/text_gray_color"
+            android:textSize="@dimen/question_size"
+            android:textStyle="bold" />
+
+        <CheckBox
+            android:id="@+id/steph_curry_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_left"
+            android:fontFamily="sans-serif-light"
+            android:text="@string/steph_curry_player"
+            android:textAppearance="?android:textAppearanceMedium" />
+
+        <CheckBox
+            android:id="@+id/lebron_james_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_left"
+            android:fontFamily="sans-serif-light"
+            android:text="@string/lebron_james_player"
+            android:textAppearance="?android:textAppearanceMedium" />
+
+        <CheckBox
+            android:id="@+id/shaquille_oneal_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/between_question_margin"
+            android:layout_marginLeft="@dimen/margin_left"
+            android:fontFamily="sans-serif-light"
+            android:text="@string/shaquille_oneal_player"
+            android:textAppearance="?android:textAppearanceMedium" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/between_question_margin"
+            android:layout_marginTop="@dimen/between_question_margin"
+            android:background="@drawable/roundedbutton"
+            android:fontFamily="sans-serif"
+            android:onClick="submitScore"
+            android:text="@string/button_text"
+            android:textColor="@color/text_white_color"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,40 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">    <string name="app_name">NBA Quiz</string>
+
+    <string name="welcome_text">Welcome to the NBA Quiz and Good Luck!</string>
+    <string name="write_edit_text">Write Here</string>
+    <string name="button_text">Submit</string>
+    <string name="progress_bar_start_value">0</string>
+    <string name="guestion_one_right_answer_one">National Basketball Association</string>
+    <string name="guestion_one_right_answer_two">National basketball association</string>
+    <string name="guestion_one_right_answer_three">national basketball association</string>
+    <string name="score_text">You had <xliff:g id="finalScore">%d</xliff:g> right answers out of <xliff:g id="total_questions">%d</xliff:g></string>
+    <string name="excellent_text">Congratulations, you are a true NBA fan!</string>
+    <string name="good_text">Nice try, it seems you\'ve watched a few NBA games!</string>
+    <string name="bad_text">Poor try, you have to start watching NBA!</string>
+
+    <string name="question_one">1) What does NBA stand for?</string>
+    <string name="question_two">2) Who has the most points in NBA history?</string>
+    <string name="question_three">3) Which of these players are still playing in the NBA?</string>
+    <string name="question_four">4) Which is the record for most assists in a single NBA game?</string>
+    <string name="question_five">5) Which is the record for most points in a single NBA game?</string>
+    <string name="question_six">6) Which is the team with most NBA titles?</string>
+    <string name="question_seven">7) Which team is the current title holder?</string>
+    <string name="question_eight">8) Which of these players have more than 20K points?</string>
+
+    <string name="michael_jordan_player">Michael Jordan</string>
+    <string name="abdul_jabbar_player">Kareem Abdul-Jabbar</string>
+    <string name="kobe_bryant_player">Kobe Bryant</string>
+    <string name="lebron_james_player">LeBron James</string>
+    <string name="kyrie_irving_player">Kyrie Irving</string>
+    <string name="steph_curry_player">Stephen Curry</string>
+    <string name="dirk_nowitzki_player">Dirk Nowitzki</string>
+    <string name="tim_duncan_player">Tim Duncan</string>
+    <string name="shaquille_oneal_player">Shaquille O\'Neal</string>
+    <string name="warriors_team">Golden State Warriors</string>
+    <string name="cavaliers_team">Cleveland  Cavaliers</string>
+    <string name="celtics_team">Boston Celtics</string>
+    <string name="lakers_team">Los Angeles Lakers</string>
+    <string name="spurs_team">San Antonio Spurs</string>
+
+</resources>
